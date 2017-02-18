@@ -5,6 +5,12 @@
 #include<stdlib.h>
 #include<time.h>
 
+#ifdef __linux__
+    #define clrscr system("clear")
+#else
+    #define clrscr system("cls")
+#endif
+
 using namespace std;
 
 const int n = 3;
@@ -19,7 +25,7 @@ struct tictac
 
 void tictac::printBoard()
 {
-	cout<<"BOARD: \n\n";
+	cout<<"\n\nBOARD: \n\n";
 	for(int i=0;i<n;i++)
 	{
 		for(int j=0;j<n;j++)
@@ -253,12 +259,12 @@ int main()
 	{
 		if(turn == user)
 		{
-			cout<<"Enter the position to mark: \n";
+			cout<<"\nEnter the position to mark : ";
 			cin >> ipos >> jpos;
 		}
 		else // bot turn
 		{
-			cout<<"Bot's move: \n";
+			clrscr ;
 			bot_turn_init(tt,countfill,ipos,jpos);
 		}
 		if( (ipos>=0 && ipos<n) && (jpos>=0 && jpos<n))//check validty
