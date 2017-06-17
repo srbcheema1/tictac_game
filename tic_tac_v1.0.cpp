@@ -238,6 +238,8 @@ int user_turn(tictac &tt,int countfill)//1
     return bot;
 }
 
+//added neetu's comment
+// nice game
 int main()
 {
 	tictac tt;
