@@ -1,3 +1,4 @@
 # tictac_game
 
-a fun game to begin with artificial intelligence & game theory
+A fun game of Tic-Tac-Toe that uses artificial intelligence & game theory to test your skills versus AI.
+Coded in C++.
