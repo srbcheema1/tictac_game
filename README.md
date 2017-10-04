@@ -3,9 +3,17 @@
 A fun game of Tic-Tac-Toe that uses artificial intelligence & game theory to test your skills versus AI.
 Coded in C++.
 
-# Usage
+## Usage
 
 Run the game in any C++ enviroment, please check the source code's library to find any dependencies.
+
+## Play
+- to give bot first turn press -1 else enter any positive number
+- you can give the position of your box in format `x y`
+  - x is for row 
+  - y is for column
+  - both x and y are 0 based
+  - example : middle box is `1 1`
 
 ## Contribute to the development of this game by:
 
