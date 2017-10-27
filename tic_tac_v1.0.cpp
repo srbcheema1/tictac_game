@@ -42,7 +42,7 @@ void tictac::printBoard()
 
 int tictac::wincheck(int board[n][n])
 {
-    //user win conditions
+    //user winning conditions
 	if     (board[0][0]==user && board[0][1]==user && board[0][2]==user) return user;
     else if(board[1][0]==user && board[1][1]==user && board[1][2]==user) return user;
     else if(board[2][0]==user && board[2][1]==user && board[2][2]==user) return user;
@@ -52,7 +52,7 @@ int tictac::wincheck(int board[n][n])
     else if(board[0][0]==user && board[1][1]==user && board[2][2]==user) return user;
     else if(board[0][2]==user && board[1][1]==user && board[2][0]==user) return user;
     
-    //bot win conditions
+    //bot winning conditions
     else if(board[0][0]==bot && board[0][1]==bot && board[0][2]==bot) return bot;
     else if(board[1][0]==bot && board[1][1]==bot && board[1][2]==bot) return bot;
     else if(board[2][0]==bot && board[2][1]==bot && board[2][2]==bot) return bot;
@@ -132,7 +132,7 @@ void bot_turn_init(tictac &tt,int countfill,int &ipos,int &jpos)//-1
     srand(sec);
     int turn=abs(rand())%best.size();
     
-    if(diff==-2 && turn < best.size()-1)//reduce wining chances
+    if(diff==-2 && turn < best.size()-1)     //reduce winning chances
         turn++;
 
     ipos=best[turn].first,jpos=best[turn].second;
@@ -161,7 +161,7 @@ int bot_turn(tictac &tt,int countfill)//-1
                     tt.board[i][j]=0;
                     return draw;
                 }
-                else if(tt.wincheck(tt.board)==0)//na jite na hi draw hu ......
+                else if(tt.wincheck(tt.board)==0)   //na jite na hi draw hu ......
                 {
                     int res=user_turn(tt,countfill);
                     if(res==bot)
