@@ -2,7 +2,7 @@
 
 A fun game of Tic-Tac-Toe that uses artificial intelligence & game theory to test your skills versus AI.
 Coded in C++.
-
+Magical game......:)
 ## Usage
 
 Run the game in any C++ enviroment, please check the source code's library to find any dependencies.
