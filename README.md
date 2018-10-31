@@ -1,7 +1,7 @@
 # Tic Tac Toe
 
 A fun game of Tic-Tac-Toe that uses artificial intelligence & game theory to test your skills versus AI.
-Coded in C++.
+It is Coded in C++.
 
 ## Usage
 
